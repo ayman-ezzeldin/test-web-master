@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --light-pink: rgba(224, 60, 227, 1);
+  --def-pink: rgba(123, 29, 128, 1);
+  --dark-pink: rgb(99, 23, 103);
+}
+
+.navbar {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  /* background: red !important; */
+}
+
+.navbar .home {
+  color: white !important;
+  width: fit-content;
+  padding: 6px;
+  border-radius: 12px;
+  gap: 12px;
+  background: var(--light-pink);
+}
+
+.navbar .profile:hover {
+  color: var(--light-pink);
+}
+
+.navbar .search {
+  color: var(--def-pink) !important;
+  border: 1px solid var(--def-pink) !important;
+}
+
+.navbar .search::placeholder {
+  color: var(--def-pink);
+}
+
+/* .navbar .search:focus {
+  outline: none;
+  box-shadow: none;
+} */
+
+@media (min-width: 768px) {
+  .navbar .search {
+    width: 526px !important;
+    /* Limit the width to 300px on md and lg screens */
+  }
+}
+.navbar .signup {
+  color: var(--def-pink);
+  width: Hug (132px);
+  height: Fixed (48px);
+  padding: 12px, 24px, 12px, 24px;
+  border-radius: 12px;
+  border: 1px;
+  gap: 8px;
+  border: 1px solid var(--def-pink) !important;
+  font-weight: 500;
+}
+
+.navbar .login {
+  border: 1px solid var(--def-pink) !important;
+  width: Hug (112px);
+  height: Fixed (48px);
+  padding: 12px, 24px, 12px, 24px;
+  border-radius: 12px;
+  border: 1px;
+  gap: 8px;
+  background-color: var(--def-pink);
+  color: white !important;
+  font-weight: 500;
+}
+
+.navbar .login:hover {
+  background-color: var(--dark-pink);
+}
+
+.navbar .signup:hover {
+  color: var(--dark-pink);
+}
+
+/* End Navbar */
+/* Start login */
+
+@media (max-width: 767px) {
+  .logPage {
+    width: 75% !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .logPage {
+    width: 50% !important;
+  }
+}
+
+.logPage h1 span {
+  color: var(--light-pink);
+}
+
+.logPage p {
+  font-size: 15px;
+}
+
+.logPage label {
+  font-weight: 600;
+}
+
+.logPage input[type="checkbox"] {
+  border: 1px solid var(--light-pink) !important;
+  font-size: 18px;
+  color: var(--def-pink);
+}
+
+input[type="checkbox"]:checked {
+  background-color: var(--light-pink);
+}
+
+.logPage .forgot {
+  color: var(--light-pink);
+}
+
+.logPage .submit {
+  color: white !important;
+  background-color: var(--light-pink) !important;
+  border-radius: 12px;
+  padding: 9px;
+  border: none;
+  font-weight: 500;
+}
+
+.logPage .signup {
+  color: var(--def-pink);
+  border-radius: 12px;
+  border: 2px solid var(--light-pink) !important;
+  font-weight: 500;
+}
+
+.logPage .google {
+  border: 2px solid var(--light-pink) !important;
+  padding: 10px;
+  border-radius: 12px;
+
+}
+
+/* End logPage */
+/* Start CreatePage */
+/* End CreatePage */
+/* Start mainHome */
+
+.homeCon {
+  height: 100vh !important;
+}
+
+.foot {
+  width: 90%;
+}
+
+/* Start Footer */
+.footer {
+  display: flex;
+  margin-bottom: 30px;
+  border-top: 1px solid rgb(142 142 147);
+  padding-top: 7px;
+}
+.footer input {
+  border: none;
+}
+ input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.mention {
+  fill: red;
+}
